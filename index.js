@@ -232,6 +232,18 @@ client.on("messageCreate", (message) => {
         message.author.send({ embeds: [embedComandi]})
     }
 
+    if(message.content == "i/provino") {
+        message.channel.send("Inserisci un provino valido. Scegli tra admin o helper")
+    }
+
+    if(message.content == "i/provino admin") {
+        message.author.send("Ecco il provino per gli admin: (in arrivo)")
+    }
+
+    if(message.content == "i/provino helper") {
+        message.author.send("Ecco il provino per gli helper : https://docs.google.com/forms/d/e/1FAIpQLSd2MHIgnWGpnQbiS2GELBtuhoF4z89kGjBw9hCO-t36NpKrEg/viewform?usp=sf_link")
+    }
+
 })
 
 client.on("guildMemberAdd", member => {
