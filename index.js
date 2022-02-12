@@ -393,7 +393,7 @@ client.on("messageCreate", message => {
                 message.channel.permissionOverwrites.edit(utente, {
                     VIEW_CHANNEL: false
                 })
-                message.channel.send(`${utente.toString()} è stato rimosso al ticket`)
+                message.channel.send(`${utente.toString()} è stato rimosso dal ticket`)
             }
         }
         else {
@@ -401,3 +401,4 @@ client.on("messageCreate", message => {
         }
     }
 })
+
