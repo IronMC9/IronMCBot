@@ -244,17 +244,6 @@ client.on("messageCreate", (message) => {
         message.author.send("Ecco il provino per gli helper : https://docs.google.com/forms/d/e/1FAIpQLSd2MHIgnWGpnQbiS2GELBtuhoF4z89kGjBw9hCO-t36NpKrEg/viewform?usp=sf_link")
     }
 
-    if (message.content == "!comando") {
-        var button1 = new Discord.MessageButton()
-            .setLabel("Apri ticket")
-            .setCustomId("apriTicket")
-            .setStyle("PRIMARY")
-
-        var row = new Discord.MessageActionRow()
-            .addComponents(button1)
-
-        message.channel.send({ content: "Clicca sul bottone per aprire un ticket", components: [row] })
-    }
 
 })
 
