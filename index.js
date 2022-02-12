@@ -3,7 +3,7 @@ const client = new Discord.Client({
     intents: 32767
 })
 
-client.login("OTM3NjM1OTg3MTg0NTc4NjIw.Yfenjw.rcQEyJioKXM6Zzy3lVRpRNbudVg")
+client.login(process.env.token)
 
 client.on("ready", () => {
     console.log("Bot Online")
