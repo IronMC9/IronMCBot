@@ -401,4 +401,3 @@ client.on("messageCreate", message => {
         }
     }
 })
-
