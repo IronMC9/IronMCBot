@@ -30,10 +30,10 @@ client.on("messageCreate", (message) => {
 
     if(message.content == "i/novità") {
         var embedNovitàNulla1 = new Discord.MessageEmbed()
-        .setColor("LIGHT_GREY")
         .setTitle("Ecco le novità Comandi!")
         .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
-        
+        .setColor("LIGHT_GREY")
+
         message.channel.send({embeds: [embedNovitàNulla1]})
     }
 
