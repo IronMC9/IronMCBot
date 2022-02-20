@@ -3,7 +3,7 @@ const client = new Discord.Client({
     intents: 32767
 })
 
-client.login(process.env.token)
+client.login("OTM3NjM1OTg3MTg0NTc4NjIw.Yfenjw.oRH8iGX9MtQ3OJ2UBFDIITN9-uY")
 
 client.on('ready', () => {
     client.user.setActivity('!saky', { type: "PLAYING" }); 
