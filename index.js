@@ -28,6 +28,24 @@ client.on("messageCreate", (message) => {
 
     }
 
+    if(message.content == "i/novità") {
+        message.channel.send("Metti la novità. Scegli tra: comandi")
+    }
+
+    if(message.content == "i/novità comandi") {
+        message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+    }
+
+    if(message.content == "I/novità") {
+        message.channel.send("Metti la novità. Scegli tra: comandi")
+    }
+
+    if(message.content == "I/novità comandi") {
+        message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+    }
+
+
+
     if(message.content == "I/help") {
         message.channel.send("Ehi quarda i messaggi! Ti ho risposto in privato.").then(msg => {
          setTimeout(() => msg.delete(), 5000)
