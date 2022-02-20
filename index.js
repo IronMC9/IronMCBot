@@ -10,7 +10,7 @@ client.on('ready', () => {
     });
     client.on('ready', () => {
         client.user.setActivity('i/help', { type: "PLAYING" }); 
-        client.user.setStatus('non disturbare') //Oppure idle, dnd, invisible
+        client.user.setStatus('ONLINE') //Oppure idle, dnd, invisible
     })
 
 
