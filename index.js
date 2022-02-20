@@ -30,23 +30,32 @@ client.on("messageCreate", (message) => {
 
     if(message.content == "i/novità") {
         var embedNovitàNulla1 = new Discord.MessageEmbed()
-        .setTitle("Ecco le novità Comandi!")
-        .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+        .setTitle("Errore! 404")
+        .setDescription("Inserisci un'azione valida (i/novità id) con comand,")
         .setColor("LIGHT_GREY")
 
         message.channel.send({embeds: [embedNovitàNulla1]})
     }
 
     if(message.content == "i/novità comandi") {
-        message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
-    }
+        var embedNovitàComandi = new Discord.MessageEmbed()
+        .setTitle("Ecco le novità dei comandi!")
+        .setDescription("Ora i comansi del bot sono con il prefisso sia maiuscolo che minuscolo! (ancora in lavorazione)")
 
-    if(message.content == "I/novità") {
-        message.channel.send("Metti la novità. Scegli tra: comandi")
+        message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
     }
 
     if(message.content == "I/novità comandi") {
         message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+    }
+
+    if(message.content == "I/novità") {
+        var embedNovitàNulla2 = new Discord.MessageEmbed()
+        .setTitle("Ecco le novità Comandi!")
+        .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+        .setColor("LIGHT_GREY")
+
+        message.channel.send({embeds: [embedNovitàNulla2]})
     }
 
 
