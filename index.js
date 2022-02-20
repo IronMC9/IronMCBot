@@ -42,7 +42,7 @@ client.on("messageCreate", (message) => {
         .setTitle("Ecco le novità dei comandi!")
         .setDescription("Ora i comansi del bot sono con il prefisso sia maiuscolo che minuscolo! (ancora in lavorazione)")
 
-        message.channel.send("Ecco qua le novità sui comandi: I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+        message.channel.send({embeds: [embedNovitàComandi]})
     }
 
     if(message.content == "I/novità comandi") {
