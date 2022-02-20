@@ -29,7 +29,11 @@ client.on("messageCreate", (message) => {
     }
 
     if(message.content == "i/novità") {
-        message.channel.send("Metti la novità. Scegli tra: comandi")
+        var embedNovitàNulla1 = new Discord.MessageEmbed()
+        .setColor("LIGHT_GREY")
+        .setTitle("Ecco le novità Comandi!")
+        .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+        message.channel.send({embeds: [embedNovitàNulla1]})
     }
 
     if(message.content == "i/novità comandi") {
