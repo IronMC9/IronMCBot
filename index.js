@@ -5,6 +5,15 @@ const client = new Discord.Client({
 
 client.login(process.env.token)
 
+client.on('ready', () => {
+    client.user.setActivity('!saky', { type: "PLAYING" }); 
+    });
+    client.on('ready', () => {
+        client.user.setActivity('i/help', { type: "PLAYING" }); 
+        client.user.setStatus('non disturbare') //Oppure idle, dnd, invisible
+    })
+
+
 client.on("ready", () => {
     console.log("Bot Online")
 })
