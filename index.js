@@ -32,7 +32,7 @@ client.on("messageCreate", (message) => {
         var embedNovitàNulla1 = new Discord.MessageEmbed()
         .setTitle("Errore! 404")
         .setDescription("Inserisci un'azione valida (i/novità id) con comand,")
-        .setColor("LIGHT_GREY")
+        .setColor("RED")
 
         message.channel.send({embeds: [embedNovitàNulla1]})
     }
@@ -40,7 +40,8 @@ client.on("messageCreate", (message) => {
     if(message.content == "i/novità comandi") {
         var embedNovitàComandi = new Discord.MessageEmbed()
         .setTitle("Ecco le novità dei comandi!")
-        .setDescription("Ora i comansi del bot sono con il prefisso sia maiuscolo che minuscolo! (ancora in lavorazione)")
+        .setDescription("Ora i comandi del bot sono con il prefisso sia maiuscolo che minuscolo! (ancora in lavorazione)")
+        .setColor("LIGHT_GREY")
 
         message.channel.send({embeds: [embedNovitàComandi]})
     }
@@ -51,9 +52,9 @@ client.on("messageCreate", (message) => {
 
     if(message.content == "I/novità") {
         var embedNovitàNulla2 = new Discord.MessageEmbed()
-        .setTitle("Ecco le novità Comandi!")
-        .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
-        .setColor("LIGHT_GREY")
+        .setTitle("Errore! 404")
+        .setDescription("Inserisci un'azione valida (i/novità id) con comand,")
+        .setColor("RED")
 
         message.channel.send({embeds: [embedNovitàNulla2]})
     }
