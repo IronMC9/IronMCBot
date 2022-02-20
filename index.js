@@ -28,11 +28,27 @@ client.on("messageCreate", (message) => {
 
     }
 
+    if(message.content == "I/help") {
+        message.channel.send("Ehi quarda i messaggi! Ti ho risposto in privato.").then(msg => {
+         setTimeout(() => msg.delete(), 5000)
+      })
+ 
+     }
+
     if(message.content == "i/ciao") {
        message.channel.send("Ciao!") 
     }
 
     if(message.content == "i/tiktok") {
+        var embed = new Discord.MessageEmbed()
+            .setTitle("Tik Tok")
+            .setDescription(`${message.author.username} Ehi! Seguici su TikTok: https://www.tiktok.com/@ironmc_9`)
+            .setThumbnail("https://loghi-famosi.com/wp-content/uploads/2020/04/TikTok-Logo.png")
+
+        message.channel.send({embeds: [embed]})
+    }
+
+    if(message.content == "I/tiktok") {
         var embed = new Discord.MessageEmbed()
             .setTitle("Tik Tok")
             .setDescription(`${message.author.username} Ehi! Seguici su TikTok: https://www.tiktok.com/@ironmc_9`)
