@@ -33,6 +33,7 @@ client.on("messageCreate", (message) => {
         .setColor("LIGHT_GREY")
         .setTitle("Ecco le novità Comandi!")
         .setDescription("I comandi sono ora sia col prefisso maiuscolo che minuscolo!")
+        
         message.channel.send({embeds: [embedNovitàNulla1]})
     }
 
